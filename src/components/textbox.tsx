@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 interface IProps {
     title: string,
-    content: string,
+    content?: string,
     children?: JSX.Element
 };
 
