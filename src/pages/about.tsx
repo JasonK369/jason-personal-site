@@ -2,16 +2,22 @@ import * as React from "react"
 import Layout from '../components/layout'
 import TextBox from '../components/textbox'
 import TimelineCard from "../components/timelineCard";
+import SkillTable from "../components/skillTable";
 import experiences from "../constant/experience";
+import skills from "../constant/skills"
+
 import { Chrono } from "react-chrono";
 
-export default function aboutMe() {
+export default function about() {
     return (
         <Layout pageTitle="About Me">
             <div>
-                <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+                <p>Hi, this page contain Jason's description and past experience</p>
+                {/* Description */}
                 <TextBox title='Description' content='Detail-oriented backend developer with an extensive experience with payment system. Skilled in handling system design, code review, and managing document and records.' />
-                <TextBox title='Experience' content='A timeline'>
+                
+                {/* Past Experience */}
+                <TextBox title='Experience'>
                     <Chrono
                         items={experiences}
                         mode="VERTICAL"
@@ -34,7 +40,11 @@ export default function aboutMe() {
                         
                     </Chrono>
                 </TextBox>
-                <TextBox title='Skills' content='Skills' />
+
+                {/* Skills */}
+                <TextBox title='Skills' content='Skills'>
+                    <SkillTable skills={skills}/>
+                </TextBox>
             </div>
         </Layout>
     )

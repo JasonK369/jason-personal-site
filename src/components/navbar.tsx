@@ -51,7 +51,7 @@ const navBar = () => {
                 </NavLinkItem>
 
                 <NavLinkItem>
-                        <Link to="/aboutMe">
+                        <Link to="/about">
                             <NavLinkText>
                                 About
                             </NavLinkText>
