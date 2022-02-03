@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import NavBar from '../components/navbar'
 
@@ -19,7 +18,7 @@ const Heading = styled.h1`
     background: rebeccapurple none repeat scroll 0% 0%;
     margin-bottom: 1.45rem;
     color: #ffffff;
-    padding: 0px 10px
+    padding: 10px
 `
 
 // React.ReactNode = a react component
@@ -27,7 +26,7 @@ const layout = ({ pageTitle, children }: IProps) => {
     return (
         <Container>
             <title>{pageTitle}</title>
-            <NavBar></NavBar>
+            <NavBar/>
             <main>
                 <Heading>{pageTitle}</Heading>
                 {children}
