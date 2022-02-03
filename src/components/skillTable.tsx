@@ -15,9 +15,6 @@ const SkillContainer = styled.td`
     color: #EFF7F6;
 `;
 
-const RatingContainer = styled.div`
-`
-
 const skillTable = ({skills}: IProps) => {
     const skillList = () => {
         return (
