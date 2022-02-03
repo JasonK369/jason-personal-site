@@ -1,42 +1,64 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import {
-    container,
-    heading,
-    navLinks,
-    navLinkItem,
-    navLinkText
-} from './layout.module.css'
+import styled from 'styled-components'
 
 type Props = {
     pageTitle: string,
     children?: JSX.Element
 };
 
+const Container = styled.div`
+    margin: auto;
+    max-width: 500px;
+    font-family: sans-serif;
+`
+
+const Heading = styled.h1`
+    color: rebeccapurple;
+`
+
+const NavLinks = styled.ul`
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+`
+
+const NavLinkItem = styled.li`
+    padding-right: 2rem;
+`
+
+const NavLinkText = styled.div`
+    color: black;
+`
+
 // React.ReactNode = a react component
 const layout = ({ pageTitle, children }: Props) => {
     return (
-        <div>
+        <Container>
             <title>{pageTitle}</title>
             <nav>
-                <ul className={navLinks}>
-                    <li className={navLinkItem}>
-                        <Link to="/" className={navLinkText}>
-                            Home
+                <NavLinks>
+                    <NavLinkItem>
+                        <Link to="/">
+                            <NavLinkText>
+                                Home
+                            </NavLinkText>
                         </Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to="/aboutMe" className={navLinkText}>
+                    </NavLinkItem>
+                    <NavLinkItem>
+                        <Link to="/aboutMe">
+                        <NavLinkText>
                             About
+                        </NavLinkText>
                         </Link>
-                    </li>
-                </ul>
+                    </NavLinkItem>
+                </NavLinks>
             </nav>
             <main>
-                <h1 className={heading}>{pageTitle}</h1>
+                <Heading>{pageTitle}</Heading>
                 {children}
             </main>
-        </div>
+        </Container>
     )
 }
 
