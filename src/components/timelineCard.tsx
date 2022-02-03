@@ -37,7 +37,7 @@ const Description = styled.div`
 
 const timelineCard = ({ company, position, location, descriptions }: IProps) => {
 
-    function JobDescriptions() {
+    const JobDescriptions = () => {
         return (
             <ul>
                 {descriptions.map((description) => (
