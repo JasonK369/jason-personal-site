@@ -10,8 +10,8 @@ export default function IndexPage() {
           <p>Welcome to Jason Kwong's Personal Site</p>
           <p>This website include Jason's short description and experience before</p>
           <StaticImage
-            alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-            src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
+            alt="Jason Kwong"
+            src="../images/jason.jpg"
           />
         </div>
       </Layout>
