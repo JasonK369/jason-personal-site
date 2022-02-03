@@ -1,0 +1,44 @@
+import * as React from 'react'
+import { Link } from 'gatsby'
+import {
+    container,
+    heading,
+    navLinks,
+    navLinkItem,
+    navLinkText
+} from './layout.module.css'
+
+type Props = {
+    pageTitle: string,
+    children?: JSX.Element
+};
+
+// React.ReactNode = a react component
+const layout = ({ pageTitle, children }: Props) => {
+    return (
+        <div>
+            <title>{pageTitle}</title>
+            <nav>
+                <ul className={navLinks}>
+                    <li className={navLinkItem}>
+                        <Link to="/" className={navLinkText}>
+                            Home
+                        </Link>
+                    </li>
+                    <li className={navLinkItem}>
+                        <Link to="/aboutMe" className={navLinkText}>
+                            About
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <h1 className={heading}>{pageTitle}</h1>
+                {children}
+            </main>
+        </div>
+    )
+}
+
+
+export default layout;
