@@ -1,9 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    siteMetadata: {
-        siteUrl: `https://www.yourdomain.tld`,
-    },
+    pathPrefix: '/jason-personal-site',
     plugins: [
       "gatsby-plugin-image",
       "gatsby-plugin-sharp",
