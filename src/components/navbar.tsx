@@ -56,7 +56,15 @@ const navBar = () => {
                                 About
                             </NavLinkText>
                         </Link>
-                    </NavLinkItem>
+                </NavLinkItem>
+
+                <NavLinkItem>
+                        <Link to="https://www.linkedin.com/in/jason-kwong-hk/">
+                            <NavLinkText>
+                                LinkedIn
+                            </NavLinkText>
+                        </Link>
+                </NavLinkItem>
             </NavLinks>
         </Navbar>
     )
