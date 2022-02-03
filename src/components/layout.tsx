@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import NavBar from '../components/navbar'
 
 type Props = {
     pageTitle: string,
@@ -36,24 +37,7 @@ const layout = ({ pageTitle, children }: Props) => {
     return (
         <Container>
             <title>{pageTitle}</title>
-            <nav>
-                <NavLinks>
-                    <NavLinkItem>
-                        <Link to="/">
-                            <NavLinkText>
-                                Home
-                            </NavLinkText>
-                        </Link>
-                    </NavLinkItem>
-                    <NavLinkItem>
-                        <Link to="/aboutMe">
-                        <NavLinkText>
-                            About
-                        </NavLinkText>
-                        </Link>
-                    </NavLinkItem>
-                </NavLinks>
-            </nav>
+            <NavBar></NavBar>
             <main>
                 <Heading>{pageTitle}</Heading>
                 {children}
