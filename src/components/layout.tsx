@@ -3,37 +3,27 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import NavBar from '../components/navbar'
 
-type Props = {
+type IProps = {
     pageTitle: string,
     children?: JSX.Element
 };
 
 const Container = styled.div`
     margin: auto;
-    max-width: 500px;
+    max-width: 600px;
     font-family: sans-serif;
+    backgound: #F0F6F6;
 `
 
 const Heading = styled.h1`
-    color: rebeccapurple;
-`
-
-const NavLinks = styled.ul`
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-`
-
-const NavLinkItem = styled.li`
-    padding-right: 2rem;
-`
-
-const NavLinkText = styled.div`
-    color: black;
+    background: rebeccapurple none repeat scroll 0% 0%;
+    margin-bottom: 1.45rem;
+    color: #ffffff;
+    padding: 0px 10px
 `
 
 // React.ReactNode = a react component
-const layout = ({ pageTitle, children }: Props) => {
+const layout = ({ pageTitle, children }: IProps) => {
     return (
         <Container>
             <title>{pageTitle}</title>
