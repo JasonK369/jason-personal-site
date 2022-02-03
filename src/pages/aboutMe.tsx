@@ -4,13 +4,6 @@ import TextBox from '../components/textbox'
 import TimelineCard from "../components/timelineCard";
 import experiences from "../constant/experience";
 import { Chrono } from "react-chrono";
-import styled from 'styled-components'
-
-const CardWrapper = styled.div`
-    align-items: start !important;
-    background: #ffffff !important;
-    margin: 0px;
-`
 
 export default function aboutMe() {
     return (
