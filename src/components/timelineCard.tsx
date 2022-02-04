@@ -9,11 +9,12 @@ interface IProps {
 };
 
 const CardWrapper = styled.div`
-    position: fixed;
+    position: relative;
     left: 0px;
     padding: 10px;
     background: #ffffff !important;
     margin: 0px;
+    width: 90%;
 `
 
 const Company = styled.div`
