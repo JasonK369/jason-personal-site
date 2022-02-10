@@ -10,8 +10,7 @@ type IProps = {
 const Container = styled.div`
     margin: auto;
     max-width: 600px;
-    font-family: sans-serif;
-    backgound: #F0F6F6;
+    font-family: Noto Sans;
 `
 
 const Heading = styled.h1`

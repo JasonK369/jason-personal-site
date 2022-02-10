@@ -16,6 +16,15 @@ module.exports = {
               "src": path.join(__dirname, 'src'),
               "pages": path.join(__dirname, 'src/pages')
             }
+        },
+        {
+          resolve: `gatsby-plugin-google-fonts`,
+          options: {
+            fonts: [
+              `Noto Sans`,
+            ],
+            display: 'swap'
           }
+        }
     ]
 }

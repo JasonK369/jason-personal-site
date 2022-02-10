@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from '../components/layout'
 import TextBox from '../components/textbox'
 import TimelineCard from "../components/timelineCard";
-import SkillTable from "../components/skillTable";
+import SkillContainer from "../components/skillContainer";
 import experiences from "../constant/experience";
 import skills from "../constant/skills"
 
@@ -43,7 +43,7 @@ export default function about() {
 
                 {/* Skills */}
                 <TextBox title='Skills' content='Skills'>
-                    <SkillTable skills={skills}/>
+                    <SkillContainer skills={skills}/>
                 </TextBox>
             </div>
         </Layout>
