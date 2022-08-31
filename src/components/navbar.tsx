@@ -16,11 +16,10 @@ const Navbar = styled.nav`
 
 
   @media (max-width: 768px) {
-    background-color: #9f9eb5;
     display: flex;
     flex-direction: column;
-    position: sticky;
-    height: 10vh;
+    // position: sticky;
+    height: 8vh;
     top: 0;
     left: 0;
     right: 0;
@@ -37,6 +36,7 @@ const Content = styled.div`
   @media (max-width: 768px) {
     margin: 0px 1vw;
     padding: 0px;
+    width: 70vw;
   }
 `
 
