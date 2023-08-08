@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install Package for ubuntu
+        run: apt-get install -y build-essential
       - name: Install Node
         uses: actions/setup-node@v2
         with:
