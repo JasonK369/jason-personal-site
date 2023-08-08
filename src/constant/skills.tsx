@@ -1,12 +1,12 @@
 const skills = [
-    {skill: "Java", rating: 70},
-    {skill: "Spring Boot", rating: 70},
-    {skill: "Ruby", rating: 60},
-    {skill: "Ruby On Rails", rating: 60},
-    {skill: "Python", rating: 55},
-    {skill: "JavaScript", rating: 50},
-    {skill: "TypeScript", rating: 50},
-    {skill: "React", rating: 50},
+    {skill: "Java"},
+    {skill: "Spring Boot"},
+    {skill: "Ruby"},
+    {skill: "Ruby On Rails"},
+    {skill: "Python"},
+    {skill: "JavaScript"},
+    {skill: "TypeScript"},
+    {skill: "React"},
 ]
 
 export default skills;

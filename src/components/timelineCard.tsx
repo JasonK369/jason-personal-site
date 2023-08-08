@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components'
 
 interface IProps {
@@ -11,20 +11,21 @@ interface IProps {
 const CardWrapper = styled.div`
     position: relative;
     left: 0px;
-    padding: 10px;
-    background: #ffffff !important;
+    padding-left: 40px;
     margin: 0px;
-    width: 90%;
+    width: 400px;
+    min-height: 300px;
+    word-wrap: break-word;
 `
 
-const Company = styled.div`
-    font-size: 15px;
+const Company = styled.h3`
     font-weight: bold;
-    color: #000000;
+    color: #ddfbd2;
 `
 
 const Position = styled.div`
-    color: #586F7C !important;
+    font-size: 30px;
+    color: #BCEDF6;
 `
 
 const Location = styled.div`
@@ -32,7 +33,7 @@ const Location = styled.div`
 `
 
 const Description = styled.div`
-    color: #000000;
+    color: #bfc0c0;
 `
 
 
