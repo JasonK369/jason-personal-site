@@ -1,7 +1,7 @@
-import * as React from 'react'
-import CustomTabs from '../tabs'
-import styled from 'styled-components'
-import ContentContainer from '../contentContainer'
+import * as React from "react";
+import styled from "styled-components";
+import ContentContainer from "../contentContainer";
+import WorkExperienceList from "../workExperienceList";
 
 const Container = styled.div`
   min-height: 60vh;
@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: flex-center;
 
   background-color: #7a6099;
-`
+`;
 const HeadTriangle = styled.div`
   background-color: #222639;
   min-height: 10vh;
@@ -19,11 +19,11 @@ const HeadTriangle = styled.div`
   @media (max-width: 768px) {
     min-height: 5vh;
   }
-`
+`;
 
 const TailTriangle = styled.div`
-  flex-grow: 1; 
-  background-color: #97ABB1;
+  flex-grow: 1;
+  background-color: #97abb1;
   min-height: 20vh;
   clip-path: polygon(100% 100%, 100% 20%, 0% 100%);
 
@@ -31,20 +31,20 @@ const TailTriangle = styled.div`
     clip-path: polygon(100% 100%, 100% 40%, 0% 100%);
     min-height: 5vh;
   }
-`
+`;
 
 const experience = () => {
   return (
     <Container id="experience">
       {/* A head triangle for separating sections */}
-      <HeadTriangle/>
+      <HeadTriangle />
       <ContentContainer heading="Past Experience">
-        <CustomTabs />
+        <WorkExperienceList />
       </ContentContainer>
-       {/* A tails triangle for separating sections */}
-       <TailTriangle/>
+      {/* A tails triangle for separating sections */}
+      <TailTriangle />
     </Container>
-  )
-}
+  );
+};
 
 export default experience;
