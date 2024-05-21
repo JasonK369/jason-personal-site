@@ -3,7 +3,7 @@ const experiences = [
     company: "Elsevier",
     periodStart: "Jan 2023",
     periodEnd: "Present",
-    position: "Software Engineer IV",
+    position: "Senior Software Engineer I",
     location: "UK🇬🇧",
     descriptions: [
       "Involved in design and implementation of event-driven system based on Kafka",
